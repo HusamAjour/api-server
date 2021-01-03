@@ -1,0 +1,7 @@
+{
+    "/categories/": "/categories",
+    "/categories\\?category=:category": "/categories?name=:category",
+    "/categories/:id/": "/categories/:id/",
+    "/products/": "/products",
+    "/products/:id/": "/products?id=:id"
+}
