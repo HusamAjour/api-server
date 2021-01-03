@@ -36,4 +36,4 @@ Test has been done using Postman and inspector.swagger.io
 
 #### UML
 
-![uml](assets/uml.png)
+![uml](assets/uml.PNG)
