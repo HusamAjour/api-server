@@ -1,5 +1,3 @@
-# LAB - Class 06
-
 ## Project: api-server
 
 ### Author: Husam Ajour
