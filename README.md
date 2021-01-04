@@ -7,7 +7,7 @@
 ### Links and Resources
 
 - [ci/cd](https://github.com/HusamAjour/api-server) (GitHub Actions)
-- [back-end server url]() (when applicable)
+- [back-end server url](http://localhost:3000/)
 - [front-end application]() (when applicable)
 - [Swagger](https://app.swaggerhub.com/apis/HusamAjour/api-server/0.1)
 
@@ -20,19 +20,24 @@ i.e.
 
 #### How to initialize/run your application (where applicable)
 
-- e.g. `json-server --watch data\ /db.json --routes data\ /routes.json`
+- e.g. `nodemon` or `npm start`
 
 #### Endpoints
 
-- e.g. `/categories/` to get all categories.
-- e.g. `/categories/1` to get a categorey by its id.
-- e.g. `/categories?category=categoryName` to get a category by its name.
-- e.g. `/products/` to get all products.
-- e.g. `/products/` to get a product by its id.
+- e.g. `GET /categories/` to get all categories.
+- e.g. `GET /categories/1` to get a categorey by its id.
+- e.g. `GET /products/` to get all products.
+- e.g. `GET /products/1` to get a product by its id.
+- e.g. `PUT /categories/1` to update a category by its id.
+- e.g. `PUT /products/1` to update a product by its id.
+- e.g. `POST /categories/` to add a new category.
+- e.g. `POST /products/` to add a new product.
+- e.g. `DELETE /categories/1` to delete a category by its id.
+- e.g. `DELETE /products/1` to delete a product by its id.
 
 #### Tests
 
-Test has been done using Postman and inspector.swagger.io
+run `npm test`
 
 #### UML
 
