@@ -18,11 +18,15 @@
   },
   "homepage": "https://github.com/HusamAjour/api-server#readme",
   "dependencies": {
+    "@code-fellows/supergoose": "^1.0.11",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jest": "^26.6.3",
     "jest-cli": "^26.6.3",
     "json-server": "^0.16.3",
+    "mongoose": "^5.11.10",
+    "morgan": "^1.10.0",
     "supertest": "^6.0.1"
   }
 }
