@@ -56,9 +56,10 @@ describe('Categories Model', () => {
       description: 'test test test PUT',
     };
     const result = await categories.create(categoryObj);
-    const record = await categories.update(result._id, updateObj); // give me back the result obj in an array
-    Object.keys(categoryObj).forEach((key) => {
-      expect(record[key]).toEqual(categoryObj[key]);
+    const record = await categories.update(result._id, updateObj);
+    const record2 = await categories.read(record._id);
+    Object.keys(updateObj).forEach((key) => {
+      expect(record2[0][key]).toEqual(updateObj[key]);
     });
   });
 });

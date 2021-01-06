@@ -55,16 +55,16 @@ describe('Products Model', () => {
     };
 
     const updateObj = {
-        name: 'test model put',
-        display_name: 'testModelPut',
-        description: 'test test test PUT',
-        category: '22 PUT',
-      };
+      name: 'test model put',
+      display_name: 'testModelPut',
+      description: 'test test test PUT',
+      category: '22 PUT',
+    };
     const result = await products.create(productObj);
-    const record = await products.update(result._id, updateObj); // give me back the result obj in an array
-    Object.keys(productObj).forEach((key) => {
-      expect(record[key]).toEqual(productObj[key]);
+    const record = await products.update(result._id, updateObj);
+    const record2 = await products.read(record._id);
+    Object.keys(updateObj).forEach((key) => {
+      expect(record2[0][key]).toEqual(updateObj[key]);
     });
   });
-  
 });
